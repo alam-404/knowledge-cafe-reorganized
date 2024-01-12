@@ -1,0 +1,10 @@
+.blogs-section{
+    padding: 5px 50px;
+}
+.bookmarks-container{
+    /* height: 100%; */
+    border: 3px solid #d6d6d6;
+    margin-top: 8px;
+    border-radius: 10px;
+    padding: 10px;
+}
