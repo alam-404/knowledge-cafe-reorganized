@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 
-import Bookmark from '../Bookmark/Bookmark';
-
 import "./Bookmarks.css"
 
 const Bookmarks = (props) => {
@@ -9,17 +7,8 @@ const Bookmarks = (props) => {
     const bookmarks = props.bookmarks;
     const blogs = props.blogs;
 
-    // set default length and get bookmarked blog
-    const [length, setLength] = useState(0);
+    // get bookmarked blog
     const [bookmarkedBlog, setBookmarkedBlog] = useState([])
-    useEffect(()=>{
-        if(!bookmarks){
-            setLength(0);
-        }else{
-            setLength(bookmarks.length);
-        }
-    }, [bookmarks])
-
     useEffect(()=>{
         if(bookmarks){
             // find bookmarked blog
@@ -39,14 +28,13 @@ const Bookmarks = (props) => {
     return (
         <div>
             <div className="bookmark-counter">
-                <h3>Bookmarks: {length}</h3>
+                <h3>Bookmarks: {!bookmarks ? 0 : bookmarks.length}</h3>
             </div>
             <hr className='bookmark-hr'/>
             <div className='bookmark-container'>
                 {
-                    bookmarkedBlog.map(title => <Bookmark key={Math.random()} title={title}></Bookmark>)
+                    bookmarkedBlog.map(title => <p className='bookmark-title'>{title}</p>)
                 }
-                {/* <Bookmark title={JSON.stringify(bookmarkedBlog)}></Bookmark> */}
             </div>
         </div>
     );
