@@ -1,10 +1,10 @@
-.time-spend-section{
-    background-color: #f3ccf3ee;
-    padding: 5px;
-    text-align: center;
-    border: 3px solid #E9A8F2;
-    border-radius: 10px;
+.time-spend-section {
+  background-color: #f3ccf3ee;
+  padding: 5px;
+  text-align: center;
+  border: 3px solid #e9a8f2;
+  border-radius: 10px;
 }
-.time-spend-section > h3{
-    font-weight: 100;
+.time-spend-section > h3 {
+  font-weight: 300;
 }

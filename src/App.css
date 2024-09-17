@@ -5,8 +5,18 @@
   /* text-align: center; */
 }
 
-main{
+main {
   display: grid;
   margin: 0 150px;
   grid-template-columns: 3fr 1fr;
+}
+
+/* media query */
+/* for mobile devices */
+@media only screen and (max-width: 688px) {
+  main {
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

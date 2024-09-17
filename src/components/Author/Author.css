@@ -1,49 +1,65 @@
-.container{
-    display: flex;
-    justify-content: space-between;
+.container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.author-container{
-    display: flex;
-    flex-direction: row;
-    margin: 10px 5px;
-    place-items: center;
-    padding: 5px 0;
+.author-container {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 5px;
+  place-items: center;
+  padding: 5px 0;
 }
 
-.author-image{
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
-    border: 1px solid #213547;
-    margin: 0 10px;
+.author-image {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: 1px solid #213547;
+  margin: 0 10px;
 }
-.follow-btn{
-    color: #747bff;
-    font-weight: 450;
-    cursor: pointer;
-    display: block;
-    font-size: 15px;
+.follow-btn {
+  color: #747bff;
+  font-weight: 450;
+  cursor: pointer;
+  display: block;
+  font-size: 15px;
 }
-.follow-btn:hover{
-    color: #213547;
+.follow-btn:hover {
+  color: #213547;
 }
-.author-name{
-    margin: 0 0 2px 0;
-    font-size: 17px;
-    color: rgb(96, 96, 96);
-}
-
-.bookmark-icon-section{
-    display: flex;
-    place-items: center;
+.author-name {
+  margin: 0 0 2px 0;
+  font-size: 17px;
+  color: rgb(96, 96, 96);
 }
 
-.bookmark-icon-section > div{
-    margin-right: 15px;
+.bookmark-icon-section {
+  display: flex;
+  place-items: center;
 }
 
-.bookmark-icon:hover{
-    color: #747bff;
+.bookmark-icon-section > div {
+  margin-right: 15px;
 }
 
+.bookmark-icon:hover {
+  color: #747bff;
+}
+
+/* media query */
+/* for mobile devices */
+@media only screen and (max-width: 688px) {
+  .author-name {
+    font-size: medium;
+  }
+  .follow-btn {
+    font-size: small;
+  }
+  .mark-btn {
+    font-size: smaller;
+  }
+  .hash-tags {
+    font-size: x-small;
+  }
+}
